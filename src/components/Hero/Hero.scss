@@ -1,0 +1,54 @@
+.hero {
+  background: pink;
+  width: 100%;
+  height: calc(200vh - 66px);
+
+  .the-company-name {
+    margin-bottom: 140px;
+    padding-top: 12px;
+    position: fixed;
+    z-index: 100;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+
+  .image-flow {
+    .image {
+      width: 600px;
+      height: 340px;
+      background-size: cover;
+      position: fixed;
+      background-repeat: no-repeat;
+      opacity: 0;
+      &.animation {
+        animation: mymove 50s infinite;
+        display: block;
+        &:hover {
+          animation-play-state: paused;
+          cursor: pointer;
+        }
+      }
+      &.touching-top {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@keyframes mymove {
+  0% {
+    left: 100%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: -55%;
+    opacity: 0;
+  }
+}

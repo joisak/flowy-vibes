@@ -1,0 +1,21 @@
+.header {
+  border-bottom: 2px solid transparent;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: pink;
+  &.logo-in-place {
+    border-bottom: 2px solid #ff8398;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 24px;
+    .logo {
+      font-size: 32px;
+    }
+  }
+}
