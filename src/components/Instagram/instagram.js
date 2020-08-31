@@ -21,7 +21,6 @@ function InstagramYeah() {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setDataObj(data.data);
       })
       .catch((error) => {

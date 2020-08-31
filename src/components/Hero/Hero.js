@@ -1,20 +1,31 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import imageThree from '../../images/3.png';
+import HeroImages from './../HeroImages/HeroImages';
 import './Hero.scss';
 
 function Hero(props) {
   const fontSize = 120;
   const companyBrand = useRef('');
 
+  const images = [
+    { url: imageThree, top: '20%', delay: '8' },
+    { url: imageThree, top: '20%', delay: '1' },
+    { url: imageThree, top: '30%', delay: '4' },
+    { url: imageThree, top: '10%', delay: '1' },
+    { url: imageThree, top: '60%', delay: '5' },
+  ];
+
   const [touchingTop, setTouchingTop] = useState(false);
   const [topPosition, setTopPosition] = useState(35);
   const [newFontSize, setNewFontSize] = useState(120);
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, {
-      passive: true,
-    });
+  const callBack = (topPosition) => {
+    return topPosition;
+  };
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, {});
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -38,6 +49,7 @@ function Hero(props) {
       props.parentCallback(false);
       setTouchingTop(false);
     }
+    callBack(topPosition);
   };
 
   return (
@@ -50,20 +62,7 @@ function Hero(props) {
         <Link to=''>FLOWY-VIBES</Link>
       </div>
       <div className='image-flow'>
-        <div
-          className={
-            'image image-numero-un animation' +
-            (touchingTop ? ' touching-top' : '')
-          }
-          style={{
-            backgroundImage: `url(
-              'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/130238819/original/d4096d4950eba421600f21c6c753c19375222eb6/draw-you-a-landscape-image-with-ms-paint.png'
-            )`,
-            top: topPosition ? '500px' : '644px',
-            animationDelay: '2s',
-            position: topPosition ? 'fixed' : 'absolute',
-          }}
-        ></div>
+        <HeroImages topPosition={topPosition} data={images} />
       </div>
     </div>
   );

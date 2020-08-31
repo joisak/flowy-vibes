@@ -1,0 +1,40 @@
+{
+  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" },
+  "bigText": {
+    "text": "For the last 70 years, American transportation planners have been using the same model to decide what to build. There’s just one problem: it’s often wrong."
+  },
+  "heroImages": [
+    {
+      "url": "https://images.unsplash.com/photo-1598121291092-d84e4017b09c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3264&q=80",
+      "top": "20%",
+      "delay": "1"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1495811590157-2e58e01cac5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+      "top": "32%",
+      "delay": "3"
+    },
+    {
+      "url": "https://images.unsplash.com/flagged/photo-1572887059071-c693515c928b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+      "top": "40%",
+      "delay": "4"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1540170732586-78bb280d254e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+      "top": "45%",
+      "delay": "14"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1537157315093-4fc4d1995b49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+      "top": "23%",
+      "delay": "17"
+    },
+    {
+      "url": "https://images.unsplash.com/flagged/photo-1551530891-42836e528e0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2110&q=80",
+      "top": "45%",
+      "delay": "20"
+    }
+  ]
+}
