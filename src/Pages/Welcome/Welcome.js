@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import BigTextSegment from '../../components/BigTextSegment/BigTextSegment';
+import ContentSegment from '../../components/ContentSegment/ContentSegment';
+import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 
 export default function WelcomePage() {
@@ -27,7 +28,31 @@ export default function WelcomePage() {
     <>
       <Header hero />
       <div className='content'>
-        <BigTextSegment text={bigText} />
+        <ContentSegment
+          image={
+            'https://cdn.pixabay.com/photo/2020/02/24/19/40/dog-4877213_1280.jpg'
+          }
+          text={bigText}
+        />
+        <ContentSegment
+          image={
+            'https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpg'
+          }
+          text={bigText}
+        />
+        <ContentSegment
+          image={
+            'https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpg'
+          }
+          text={bigText}
+        />
+        <ContentSegment
+          image={
+            'https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpg'
+          }
+          text={bigText}
+        />
+        <Footer />
       </div>
     </>
   );

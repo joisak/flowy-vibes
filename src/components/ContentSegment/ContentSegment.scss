@@ -1,0 +1,21 @@
+.big-segment {
+  height: 125vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  margin-top: 24px;
+  &:first-child {
+    margin-top: 72px;
+  }
+  &:nth-last-child(2) {
+    margin-bottom: 144px;
+    background-color: blue;
+  }
+
+  .big-text {
+    font-size: 74px;
+    position: sticky;
+    top: 25%;
+  }
+}
