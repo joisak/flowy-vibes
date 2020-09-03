@@ -21,7 +21,7 @@
       background-repeat: no-repeat;
       opacity: 0;
       &.animation {
-        animation: mymove 50s infinite;
+        animation: mymove 120s infinite;
         display: block;
         &:hover {
           animation-play-state: paused;
@@ -47,7 +47,7 @@
     opacity: 1;
   }
   100% {
-    left: -55%;
+    left: -50%;
     opacity: 0;
   }
 }

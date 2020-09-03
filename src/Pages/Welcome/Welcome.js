@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ContentSegment from '../../components/ContentSegment/ContentSegment';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import ImageGallery from '../../components/ImageGallery/ImageGallery';
 
 export default function WelcomePage() {
   const [bigText, setBigText] = useState('');
@@ -52,6 +53,7 @@ export default function WelcomePage() {
           }
           text={bigText}
         />
+        <ImageGallery />
         <Footer />
       </div>
     </>
